@@ -1,5 +1,8 @@
 let str = "Javacript";
+let p = document.createElement('p');
+let body = document.querySelector('body');
 for(let i = str.length - 1 ;  i >= 0 ; i--)
 {
-  console.log(str[i]);
-}
+  p.textcontent = str[i];
+};
+body.append(p);
